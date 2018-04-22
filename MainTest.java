@@ -12,7 +12,7 @@ public class MainTest {
 		m.showHouseHolds(houseHolds);
 	}
 
-	public HouseHold[] enterHouseHold() {
+	private HouseHold[] enterHouseHold() {
 		int n, numberOfPeople, numberOfHouse;
 
 		HouseHold[] houseHolds;
@@ -37,7 +37,7 @@ public class MainTest {
 		return houseHolds;
 	}
 
-	public Member[] enterMember(int numberOfPeople) {
+	private Member[] enterMember(int numberOfPeople) {
 		Member[] members = new Member[numberOfPeople];
 		Scanner scan = new Scanner(System.in);
 		int age, yOB;
@@ -58,7 +58,7 @@ public class MainTest {
 		return members;
 	}
 
-	public void showHouseHolds(HouseHold[] houseHolds) {
+	private void showHouseHolds(HouseHold[] houseHolds) {
 		for (HouseHold houseHold : houseHolds) {
 			System.out.println(houseHold.toString());
 		}
